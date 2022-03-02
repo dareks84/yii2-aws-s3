@@ -45,9 +45,9 @@ final class UploadCommandHandler extends Handler
     protected function sourceToStream($source): StreamInterface
     {
         if (is_string($source)) {
-            $source = Utils::try_fopen($source, 'r+');
+            $source = Utils::tryFopen($source, 'r+');
         }
 
-        return Utils::stream_for($source);
+        return Utils::streamFor($source);
     }
 }
