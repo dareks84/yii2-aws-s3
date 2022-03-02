@@ -1,32 +1,32 @@
 <?php
 
-namespace frostealth\yii2\aws\s3;
+namespace dareks84\yii2\aws\s3;
 
-use frostealth\yii2\aws\s3\commands\DeleteCommand;
-use frostealth\yii2\aws\s3\commands\ExistCommand;
-use frostealth\yii2\aws\s3\commands\GetCommand;
-use frostealth\yii2\aws\s3\commands\GetPresignedUrlCommand;
-use frostealth\yii2\aws\s3\commands\GetUrlCommand;
-use frostealth\yii2\aws\s3\commands\PutCommand;
-use frostealth\yii2\aws\s3\commands\RestoreCommand;
-use frostealth\yii2\aws\s3\commands\UploadCommand;
-use frostealth\yii2\aws\s3\commands\ListCommand;
-use frostealth\yii2\aws\s3\interfaces;
+use dareks84\yii2\aws\s3\commands\DeleteCommand;
+use dareks84\yii2\aws\s3\commands\ExistCommand;
+use dareks84\yii2\aws\s3\commands\GetCommand;
+use dareks84\yii2\aws\s3\commands\GetPresignedUrlCommand;
+use dareks84\yii2\aws\s3\commands\GetUrlCommand;
+use dareks84\yii2\aws\s3\commands\PutCommand;
+use dareks84\yii2\aws\s3\commands\RestoreCommand;
+use dareks84\yii2\aws\s3\commands\UploadCommand;
+use dareks84\yii2\aws\s3\commands\ListCommand;
+use dareks84\yii2\aws\s3\interfaces;
 
 /**
  * Class CommandFactory
  *
- * @package frostealth\yii2\aws\s3
+ * @package dareks84\yii2\aws\s3
  */
 class CommandFactory
 {
-    /** @var \frostealth\yii2\aws\s3\interfaces\CommandBuilder */
+    /** @var \dareks84\yii2\aws\s3\interfaces\CommandBuilder */
     protected $builder;
 
     /**
      * CommandFactory constructor.
      *
-     * @param \frostealth\yii2\aws\s3\interfaces\CommandBuilder $builder
+     * @param \dareks84\yii2\aws\s3\interfaces\CommandBuilder $builder
      */
     public function __construct(interfaces\CommandBuilder $builder)
     {
@@ -36,7 +36,7 @@ class CommandFactory
     /**
      * @param string $filename
      *
-     * @return \frostealth\yii2\aws\s3\commands\GetCommand
+     * @return \dareks84\yii2\aws\s3\commands\GetCommand
      */
     public function get(string $filename): GetCommand
     {
@@ -51,7 +51,7 @@ class CommandFactory
      * @param string $filename
      * @param mixed  $body
      *
-     * @return \frostealth\yii2\aws\s3\commands\PutCommand
+     * @return \dareks84\yii2\aws\s3\commands\PutCommand
      */
     public function put(string $filename, $body): PutCommand
     {
@@ -65,7 +65,7 @@ class CommandFactory
     /**
      * @param string $filename
      *
-     * @return \frostealth\yii2\aws\s3\commands\DeleteCommand
+     * @return \dareks84\yii2\aws\s3\commands\DeleteCommand
      */
     public function delete(string $filename): DeleteCommand
     {
@@ -80,7 +80,7 @@ class CommandFactory
      * @param string $filename
      * @param mixed  $source
      *
-     * @return \frostealth\yii2\aws\s3\commands\UploadCommand
+     * @return \dareks84\yii2\aws\s3\commands\UploadCommand
      */
     public function upload(string $filename, $source): UploadCommand
     {
@@ -95,7 +95,7 @@ class CommandFactory
      * @param string $filename
      * @param int    $days      lifetime of the active copy in days
      *
-     * @return \frostealth\yii2\aws\s3\commands\RestoreCommand
+     * @return \dareks84\yii2\aws\s3\commands\RestoreCommand
      */
     public function restore(string $filename, int $days): RestoreCommand
     {
@@ -109,7 +109,7 @@ class CommandFactory
     /**
      * @param string $filename
      *
-     * @return \frostealth\yii2\aws\s3\commands\ExistCommand
+     * @return \dareks84\yii2\aws\s3\commands\ExistCommand
      */
     public function exist(string $filename): ExistCommand
     {
@@ -123,7 +123,7 @@ class CommandFactory
     /**
      * @param string $prefix
      *
-     * @return \frostealth\yii2\aws\s3\commands\ListCommand
+     * @return \dareks84\yii2\aws\s3\commands\ListCommand
      */
     public function list(string $prefix): ListCommand
     {
@@ -137,7 +137,7 @@ class CommandFactory
     /**
      * @param string $filename
      *
-     * @return \frostealth\yii2\aws\s3\commands\GetUrlCommand
+     * @return \dareks84\yii2\aws\s3\commands\GetUrlCommand
      */
     public function getUrl(string $filename): GetUrlCommand
     {
@@ -152,7 +152,7 @@ class CommandFactory
      * @param string $filename
      * @param mixed  $expires
      *
-     * @return \frostealth\yii2\aws\s3\commands\GetPresignedUrlCommand
+     * @return \dareks84\yii2\aws\s3\commands\GetPresignedUrlCommand
      */
     public function getPresignedUrl(string $filename, $expires): GetPresignedUrlCommand
     {

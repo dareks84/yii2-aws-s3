@@ -1,21 +1,21 @@
 <?php
 
-namespace frostealth\yii2\aws\s3\handlers;
+namespace dareks84\yii2\aws\s3\handlers;
 
-use frostealth\yii2\aws\s3\commands\UploadCommand;
-use frostealth\yii2\aws\s3\base\handlers\Handler;
+use dareks84\yii2\aws\s3\commands\UploadCommand;
+use dareks84\yii2\aws\s3\base\handlers\Handler;
 use Psr\Http\Message\StreamInterface;
 use GuzzleHttp\Psr7\Utils;
 
 /**
  * Class UploadCommandHandler
  *
- * @package frostealth\yii2\aws\s3\handlers
+ * @package dareks84\yii2\aws\s3\handlers
  */
 final class UploadCommandHandler extends Handler
 {
     /**
-     * @param \frostealth\yii2\aws\s3\commands\UploadCommand $command
+     * @param \dareks84\yii2\aws\s3\commands\UploadCommand $command
      *
      * @return \Aws\ResultInterface|\GuzzleHttp\Promise\PromiseInterface
      */

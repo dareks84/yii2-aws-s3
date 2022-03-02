@@ -1,17 +1,17 @@
 # Yii2 AWS S3
 
-fork -  frostealth/yii2-aws-s3 ~2.0
+fork -  dareks84/yii2-aws-s3 ~2.0
 
 An Amazon S3 component for Yii2.
 
-[![License](https://poser.pugx.org/frostealth/yii2-aws-s3/license)](https://github.com/frostealth/yii2-aws-s3/blob/2.x/LICENSE)
-[![Latest Stable Version](https://poser.pugx.org/frostealth/yii2-aws-s3/v/stable)](https://packagist.org/packages/frostealth/yii2-aws-s3)
-[![Total Downloads](https://poser.pugx.org/frostealth/yii2-aws-s3/downloads)](https://packagist.org/packages/frostealth/yii2-aws-s3)
-[![Latest Unstable Version](https://poser.pugx.org/frostealth/yii2-aws-s3/v/unstable)](https://packagist.org/packages/frostealth/yii2-aws-s3)
+[![License](https://poser.pugx.org/dareks84/yii2-aws-s3/license)](https://github.com/dareks84/yii2-aws-s3/blob/2.x/LICENSE)
+[![Latest Stable Version](https://poser.pugx.org/dareks84/yii2-aws-s3/v/stable)](https://packagist.org/packages/dareks84/yii2-aws-s3)
+[![Total Downloads](https://poser.pugx.org/dareks84/yii2-aws-s3/downloads)](https://packagist.org/packages/dareks84/yii2-aws-s3)
+[![Latest Unstable Version](https://poser.pugx.org/dareks84/yii2-aws-s3/v/unstable)](https://packagist.org/packages/dareks84/yii2-aws-s3)
 
 > Yii2 AWS S3 uses [SemVer](http://semver.org/).
 
-> Version 2.x requires PHP 7. For PHP less 7.0 use [1.x](https://github.com/frostealth/yii2-aws-s3/tree/1.x).
+> Version 2.x requires PHP 7. For PHP less 7.0 use [1.x](https://github.com/dareks84/yii2-aws-s3/tree/1.x).
 
 ## Installation
 
@@ -45,7 +45,7 @@ An Amazon S3 component for Yii2.
 ### Usage of the command factory and additional params
 
 ```php
-/** @var \frostealth\yii2\aws\s3\Service $s3 */
+/** @var \dareks84\yii2\aws\s3\Service $s3 */
 $s3 = Yii::$app->get('s3');
 
 /** @var \Aws\ResultInterface $result */
@@ -74,7 +74,7 @@ $signedUrl = $s3->commands()->getPresignedUrl('filename.ext', '+2 days')->execut
 ### Short syntax
 
 ```php
-/** @var \frostealth\yii2\aws\s3\Service $s3 */
+/** @var \dareks84\yii2\aws\s3\Service $s3 */
 $s3 = Yii::$app->get('s3');
 
 /** @var \Aws\ResultInterface $result */
@@ -103,7 +103,7 @@ $signedUrl = $s3->getPresignedUrl('filename.ext', '+2 days');
 ### Asynchronous execution
 
 ```php
-/** @var \frostealth\yii2\aws\s3\Service $s3 */
+/** @var \dareks84\yii2\aws\s3\Service $s3 */
 $s3 = Yii::$app->get('s3');
 
 /** @var \GuzzleHttp\Promise\PromiseInterface $promise */

@@ -1,5 +1,5 @@
 {
-    "name": "frostealth/yii2-aws-s3",
+    "name": "dareks84/yii2-aws-s3",
     "type": "yii2-extension",
     "description": "An Amazon S3 component for Yii2",
     "keywords": ["yii2", "aws", "s3", "aws-s3", "yii2-aws", "yii2-s3"],
@@ -14,10 +14,14 @@
         {
             "name": "Constantine Chuprik",
             "email": "constantinchuprik@gmail.com"
+        },
+        {
+            "name": "Evgeniy Nezhidaev",
+            "email": "dareks84@gmail.com"
         }
     ],
     "support": {
-        "issues": "https://github.com/frostealth/yii2-aws-s3/issues?state=open"
+        "issues": "https://github.com/dareks84/yii2-aws-s3/issues?state=open"
     },
     "require": {
         "php": ">=7.0.0",

@@ -1,13 +1,13 @@
 <?php
 
-namespace frostealth\yii2\aws\s3\commands;
+namespace dareks84\yii2\aws\s3\commands;
 
 use Aws\ResultInterface;
-use frostealth\yii2\aws\s3\base\commands\ExecutableCommand;
-use frostealth\yii2\aws\s3\base\commands\traits\Async;
-use frostealth\yii2\aws\s3\interfaces\commands\Asynchronous;
-use frostealth\yii2\aws\s3\interfaces\commands\HasBucket;
-use frostealth\yii2\aws\s3\interfaces\commands\PlainCommand;
+use dareks84\yii2\aws\s3\base\commands\ExecutableCommand;
+use dareks84\yii2\aws\s3\base\commands\traits\Async;
+use dareks84\yii2\aws\s3\interfaces\commands\Asynchronous;
+use dareks84\yii2\aws\s3\interfaces\commands\HasBucket;
+use dareks84\yii2\aws\s3\interfaces\commands\PlainCommand;
 use GuzzleHttp\Promise\PromiseInterface;
 
 /**
@@ -15,7 +15,7 @@ use GuzzleHttp\Promise\PromiseInterface;
  *
  * @method ResultInterface|PromiseInterface execute()
  *
- * @package frostealth\yii2\aws\s3\commands
+ * @package dareks84\yii2\aws\s3\commands
  */
 class RestoreCommand extends ExecutableCommand implements PlainCommand, HasBucket, Asynchronous
 {

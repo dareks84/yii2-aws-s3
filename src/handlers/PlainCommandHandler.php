@@ -1,21 +1,21 @@
 <?php
 
-namespace frostealth\yii2\aws\s3\handlers;
+namespace dareks84\yii2\aws\s3\handlers;
 
 use Aws\CommandInterface as AwsCommand;
-use frostealth\yii2\aws\s3\base\handlers\Handler;
-use frostealth\yii2\aws\s3\interfaces\commands\Asynchronous;
-use frostealth\yii2\aws\s3\interfaces\commands\PlainCommand;
+use dareks84\yii2\aws\s3\base\handlers\Handler;
+use dareks84\yii2\aws\s3\interfaces\commands\Asynchronous;
+use dareks84\yii2\aws\s3\interfaces\commands\PlainCommand;
 
 /**
  * Class PlainCommandHandler
  *
- * @package frostealth\yii2\aws\s3\handlers
+ * @package dareks84\yii2\aws\s3\handlers
  */
 final class PlainCommandHandler extends Handler
 {
     /**
-     * @param \frostealth\yii2\aws\s3\interfaces\commands\PlainCommand $command
+     * @param \dareks84\yii2\aws\s3\interfaces\commands\PlainCommand $command
      *
      * @return \Aws\ResultInterface|\GuzzleHttp\Promise\PromiseInterface
      */
@@ -30,7 +30,7 @@ final class PlainCommandHandler extends Handler
     }
 
     /**
-     * @param \frostealth\yii2\aws\s3\interfaces\commands\PlainCommand $command
+     * @param \dareks84\yii2\aws\s3\interfaces\commands\PlainCommand $command
      *
      * @return bool
      */
@@ -40,7 +40,7 @@ final class PlainCommandHandler extends Handler
     }
 
     /**
-     * @param \frostealth\yii2\aws\s3\interfaces\commands\PlainCommand $command
+     * @param \dareks84\yii2\aws\s3\interfaces\commands\PlainCommand $command
      *
      * @return \Aws\CommandInterface
      */

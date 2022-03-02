@@ -1,19 +1,19 @@
 <?php
 
-namespace frostealth\yii2\aws\s3\handlers;
+namespace dareks84\yii2\aws\s3\handlers;
 
-use frostealth\yii2\aws\s3\base\handlers\Handler;
-use frostealth\yii2\aws\s3\commands\GetPresignedUrlCommand;
+use dareks84\yii2\aws\s3\base\handlers\Handler;
+use dareks84\yii2\aws\s3\commands\GetPresignedUrlCommand;
 
 /**
  * Class GetPresignedUrlCommandHandler
  *
- * @package frostealth\yii2\aws\s3\handlers
+ * @package dareks84\yii2\aws\s3\handlers
  */
 final class GetPresignedUrlCommandHandler extends Handler
 {
     /**
-     * @param \frostealth\yii2\aws\s3\commands\GetPresignedUrlCommand $command
+     * @param \dareks84\yii2\aws\s3\commands\GetPresignedUrlCommand $command
      *
      * @return string
      */

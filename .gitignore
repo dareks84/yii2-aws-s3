@@ -10,3 +10,4 @@ thumbs.db
 composer.phar
 composer.lock
 vendor
+/nbproject/private/

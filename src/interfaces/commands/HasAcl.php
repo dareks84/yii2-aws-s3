@@ -1,11 +1,11 @@
 <?php
 
-namespace frostealth\yii2\aws\s3\interfaces\commands;
+namespace dareks84\yii2\aws\s3\interfaces\commands;
 
 /**
  * Interface HasAcl
  *
- * @package frostealth\yii2\aws\s3\interfaces\commands
+ * @package dareks84\yii2\aws\s3\interfaces\commands
  */
 interface HasAcl
 {
